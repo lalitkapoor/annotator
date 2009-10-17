@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="jspec/jspec.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+    <script src="jspec/jspec.js"></script>
+    <script src="jspec/jspec.jquery.js"></script>
+    <script src="jspec/jspec.xhr.js"></script>
+    <script src="../lib/vendor/jquery.pluginfactory.js"></script>
+    <script src="../lib/vendor/jquery.sji.js"></script>
+    <script src="../lib/extensions.js"></script>
+    <script src="../lib/annotator.js"></script>
+    <script>
+      jQuery(function () {
+        JSpec
+        .exec('extensions_spec.js')
+        .exec('annotator_spec.js')
+        .exec('annotation_store_spec.js')
+        .run()
+        .report();
+      });
+    </script>
+  </head>
+  <body class="jspec">
+    <div id="jspec-top"><h2 id="jspec-title">JSpec <em><script>document.write(JSpec.version)</script></em></h2></div>
+    <div id="jspec"></div>
+    <div id="jspec-bottom"></div>
+  </body>
+</html>
